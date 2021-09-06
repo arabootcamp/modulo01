@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio ECamp</title>
+
+  <meta name="author" content="Grupo2">
+  <meta name="description" content="Ciudad de Valparaíso">
+  <meta name="keywords" content="Valparaiso, patrimonio">
+  <link rel="shortcut icon" type="image/jpg" href="assets/img/icono.png">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- CSS project-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+
+  <!-- Navbar  -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo_valpo.png" width="20%" height="20%" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Turismo
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Miradores</a>
+              <a class="dropdown-item" href="#">Cerros</a>
+              <a class="dropdown-item" href="#">Ascensores</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quienes somos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Carousel-->
+  <header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/Banner1.jpg" class="banner-image" alt="Valparaiso-banner1">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="banner-text">Miradores</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Banner2.png" class="banner-image" alt="Valparaiso-banner1">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="banner-text">Cerros</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Banner3.jpg" class="banner-image" alt="Valparaiso-banner1">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="banner-text">Ascensores</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </header>
+
+  <!--Main-->
+  <main class="main">
+
+    <div class="text-center">
+      <hr class="featurette-divider">
+      <h3 class="main__title">Plaza Victoria</h3>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="assets/img/Plaza-Victoria.jpg">
+              <div class="content-details fadeIn-top">
+                <p>La Plaza Victoria, también llamada Plaza de la Victoria, es una plaza ubicada en el sector El
+                  Almendral
+                  del
+                  plan de la ciudad de Valparaíso, Chile, de importancia patrimonial, que incluye valiosas estatuas y
+                  especies
+                  vegetales.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.3928049434735!2d-71.61988509999999!3d-33.046124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDAyJzQ2LjEiUyA3McKwMzcnMTEuNiJX!5e0!3m2!1ses-419!2scl!4v1622137113781!5m2!1ses-419!2scl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <hr class="featurette-divider">
+      <h3 class="main__title">Plaza Sotomayor</h3>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="assets/img/Plaza-Sotomayor.jpg">
+              <div class="content-details fadeIn-top">
+                <p>En el centro de la plaza está ubicado el Monumento a los héroes de Iquique, dedicado a los mártires
+                  que
+                  participaron en el Combate naval de Iquique y de Punta Gruesa librados entre los buques chilenos
+                  Esmeralda
+                  y
+                  Covadonga contra los peruanos Huáscar e Independencia el 21 de mayo de 1879. Debajo del monumento se
+                  encuentra un mausoleo donde descansan los restos de los caídos y sobrevivientes chilenos del combate.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618.8773445870654!2d-71.62864802261089!3d-33.03852994530802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDAyJzE4LjMiUyA3McKwMzcnNDQuNyJX!5e0!3m2!1ses-419!2scl!4v1622137189055!5m2!1ses-419!2scl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <hr class="featurette-divider">
+      <h3 class="main__title">Ascensor Reina Victoria</h3>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">
+            <div class="content">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="assets/img/Reina-Victoria.jpg">
+              <div class="content-details fadeIn-top" id="bgtext">
+                <p>El ascensor Reina Victoria, ubicado en el cerro Alegre, es uno de los 30 ascensores que forman parte
+                  de
+                  la
+                  historia de la ciudad de Valparaíso, Chile. Se construyó en 1902 y se inauguró en 1903. Fue declarado
+                  Monumento Histórico, mediante el Decreto Exento n.º 866, del 1 de septiembre de 1998.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.481006331879!2d-71.6264454!3d-33.0438012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDAyJzM3LjciUyA3McKwMzcnMzUuMiJX!5e0!3m2!1ses-419!2scl!4v1622154707121!5m2!1ses-419!2scl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+  </main>
+  <!--Newsletter-->
+  <section class="newsletter container-fluid py-5 px-0">
+    <h4 class="mb-2 text-center fs-4">Suscríbete al Newsletter de Valparaíso</h4>
+    <form class="newsletter__form my-4 mx-auto">
+      <div class="mb-3">
+        <input type="text" class="form-control form-control-md fw-light" id="nom-usr" placeholder="Nombre">
+      </div>
+      <div class="mb-4">
+        <input type="email" class="form-control form-control-md fw-light" id="mail-usr"
+          placeholder="Correo Electrónico">
+      </div>
+      <div class="text-center">
+        <button type="submit" class="form__btn-submit btn btn-light border border-success px-5">Enviar</button>
+      </div>
+    </form>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div id="modal-body" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__group d-sm-flex justify-content-around align-items-center">
+      <div>
+        <a href="https://www.sernatur.cl/" target="_blank"> <img src="assets/img/logo_sernatur.png" class="height-5rem"
+            data-toggle="tooltip" data-placement="bottom" title="Servicio Nacional de Turismo">
+        </a>
+      </div>
+      <div class="mt-3 mt-sm-0">
+        <a href="https://www.municipalidaddevalparaiso.cl/" target="_blank"> <img src="assets/img/logo_muni.png"
+            class="height-5rem" data-toggle="tooltip" data-placement="bottom" title="Municipalidad de Valparaíso"></a>
+      </div>
+      <div class="mt-3 mt-sm-0">
+        <a href="https://parquecultural.cl/" target="_blank"> <img src="assets/img/logo_parque.png" class="height-5rem"
+            data-toggle="tooltip" data-placement="bottom" title="Parque Cultural de Valparaíso"></a>
+      </div>
+      <div class="mt-3 mt-sm-0">
+        <a href="https://registratumascota.cl/" target="_blank"> <img src="assets/img/logo_tenencia.png"
+            class="height-5rem" data-toggle="tooltip" data-placement="bottom" title="Registra tu mascota"></a>
+      </div>
+    </div>
+    <p class="footer__p">Grupo 2 - Ecamp - 2021</p>
+  </footer>
+
+  <!--Bootstrap popper-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <!--Bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  <!--Script project-->
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
